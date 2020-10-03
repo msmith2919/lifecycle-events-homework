@@ -5,7 +5,7 @@ function Nav() {
     return(
         <nav>
             <Link to={"/"}>Home</Link>
-            <Link to={"/dataPage/Interactive"}>Interactive</Link>
+
         </nav>
     )
 }
