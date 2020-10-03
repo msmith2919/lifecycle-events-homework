@@ -4,7 +4,7 @@ import Box from "./Box";
 
 function DataPage (props){
 
-    const [count, setCount] = React.useState(1);
+    const [count, setCount] = React.useState(0);
     const [color, setColor] = React.useState ("black");
     const [data, setData] = React.useState([{id: "This is a box"}]);
     const [submit, setSubmit] = React.useState(false);
@@ -27,7 +27,7 @@ function DataPage (props){
 
     React.useEffect(()=>{
         let ogData = data;
-        ogData.push({id: "This is also a box..."});
+        ogData.push({id: "...This is also a box..."});
         setData(ogData);
     }, [data, submit]);
 
@@ -43,7 +43,9 @@ function DataPage (props){
         if (count % 2 !== 0){
             setSubmit(!submit);
         }
-        //setSubmit(!submit);
+        else{
+            setSubmit(submit);
+        }
     }
 
     return (

@@ -7,7 +7,7 @@ function Box(props){
     const [color] = React.useState (props.color);
 
     return(
-        <div style={{marginTop: "30px", marginLeft: "30px", backgroundColor: color, color: "white", height: "100px", width: "200px", marginBottom: "30px"}}>
+        <div style={{marginTop: "30px", marginLeft: "30px", backgroundColor: color, color: "white", height: "50px", width: "200px", marginBottom: "30px"}}>
             {id}
         </div>
     )
