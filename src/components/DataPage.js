@@ -55,7 +55,6 @@ function DataPage (props){
             <button onClick={refreshPage}>Reset</button>
             <h3>{count}</h3>
             <div style={{marginLeft: "20px", marginTop: "20px", backgroundColor: color, width: "200px"}}>{boxEles}</div>
-            <div style = {{backgroundColor:color, height: "100px", width: "100px"}}></div>
         </div>
     )
 }
